@@ -1,0 +1,6 @@
+framework module Pods_PoGORaids {
+  umbrella header "Pods-PoGORaids-umbrella.h"
+
+  export *
+  module * { export * }
+}

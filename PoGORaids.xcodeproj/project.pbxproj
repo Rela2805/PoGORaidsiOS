@@ -3,18 +3,68 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C98473E96F9D25DFB1B9085 /* Pods_PoGORaidsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A602E9FC3C2B9582FCEED41 /* Pods_PoGORaidsTests.framework */; };
 		31762A1325C5DA9000F769AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762A1225C5DA9000F769AC /* AppDelegate.swift */; };
 		31762A1525C5DA9000F769AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762A1425C5DA9000F769AC /* SceneDelegate.swift */; };
-		31762A1725C5DA9000F769AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762A1625C5DA9000F769AC /* ViewController.swift */; };
-		31762A1A25C5DA9000F769AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31762A1825C5DA9000F769AC /* Main.storyboard */; };
 		31762A1C25C5DA9300F769AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31762A1B25C5DA9300F769AC /* Assets.xcassets */; };
 		31762A1F25C5DA9300F769AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31762A1D25C5DA9300F769AC /* LaunchScreen.storyboard */; };
 		31762A2A25C5DA9300F769AC /* PoGORaidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762A2925C5DA9300F769AC /* PoGORaidsTests.swift */; };
 		31762A3525C5DA9300F769AC /* PoGORaidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762A3425C5DA9300F769AC /* PoGORaidsUITests.swift */; };
+		31762A5C25C5E79600F769AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762A5B25C5E79600F769AC /* LoginViewController.swift */; };
+		31762AAB25C613B300F769AC /* LoginViewController+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762AAA25C613B300F769AC /* LoginViewController+Design.swift */; };
+		31762AB325C613C200F769AC /* ConstructViewsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762AB225C613C200F769AC /* ConstructViewsProtocol.swift */; };
+		31762AB825C6149C00F769AC /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762AB725C6149C00F769AC /* LoginPresenter.swift */; };
+		31762AC025C617AC00F769AC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762ABF25C617AC00F769AC /* AppRouter.swift */; };
+		31762AC525C617BB00F769AC /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762AC425C617BB00F769AC /* AppModule.swift */; };
+		31762AFE25C61B1300F769AC /* UserClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762AFD25C61B1300F769AC /* UserClient.swift */; };
+		31762B0725C61B9800F769AC /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B0625C61B9800F769AC /* UserRequest.swift */; };
+		31762B0F25C61C3C00F769AC /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B0E25C61C3C00F769AC /* UserResponse.swift */; };
+		31762B1425C61DBC00F769AC /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B1325C61DBC00F769AC /* UserDataSource.swift */; };
+		31762B1A25C61DE500F769AC /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B1925C61DE500F769AC /* UserDataModel.swift */; };
+		31762B2325C61F9E00F769AC /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B2225C61F9E00F769AC /* UserDefaultsService.swift */; };
+		31762B2D25C6206000F769AC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B2C25C6206000F769AC /* UserModel.swift */; };
+		31762B3525C6209800F769AC /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B3425C6209800F769AC /* UserUseCase.swift */; };
+		31762B3B25C6240500F769AC /* TeamClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B3A25C6240500F769AC /* TeamClient.swift */; };
+		31762B4525C624BB00F769AC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B4425C624BB00F769AC /* RegisterViewController.swift */; };
+		31762B4D25C624C800F769AC /* RegisterViewController+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B4C25C624C800F769AC /* RegisterViewController+Design.swift */; };
+		31762B5225C624DB00F769AC /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B5125C624DB00F769AC /* RegisterPresenter.swift */; };
+		31762B5D25C6A34300F769AC /* RaidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B5C25C6A34300F769AC /* RaidsViewController.swift */; };
+		31762B6225C6A35600F769AC /* RaidsViewController+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B6125C6A35600F769AC /* RaidsViewController+Design.swift */; };
+		31762B6725C6A39300F769AC /* RaidsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B6625C6A39300F769AC /* RaidsPresenter.swift */; };
+		31762B6C25C6A4FA00F769AC /* RaidsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B6B25C6A4FA00F769AC /* RaidsDetailsViewController.swift */; };
+		31762B7125C6A50C00F769AC /* RaidsDetailsViewController+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B7025C6A50C00F769AC /* RaidsDetailsViewController+Design.swift */; };
+		31762B7625C6A54300F769AC /* RaidsDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B7525C6A54300F769AC /* RaidsDetailsPresenter.swift */; };
+		31762B7B25C6A57700F769AC /* CreateRaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B7A25C6A57700F769AC /* CreateRaidViewController.swift */; };
+		31762B8025C6A58000F769AC /* CreateRaidPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B7F25C6A58000F769AC /* CreateRaidPresenter.swift */; };
+		31762B8525C6A59000F769AC /* CreateRaidViewController+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B8425C6A59000F769AC /* CreateRaidViewController+Design.swift */; };
+		31762B8A25C6A5FD00F769AC /* ProfileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B8925C6A5FD00F769AC /* ProfileDetailsViewController.swift */; };
+		31762B8F25C6A60B00F769AC /* ProfileDetailsViewController+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B8E25C6A60B00F769AC /* ProfileDetailsViewController+Design.swift */; };
+		31762B9425C6A63400F769AC /* ProfileDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B9325C6A63400F769AC /* ProfileDetailsPresenter.swift */; };
+		31762B9D25C6B7AD00F769AC /* RaidUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762B9C25C6B7AD00F769AC /* RaidUseCase.swift */; };
+		31762BB125C6B7E400F769AC /* RaidDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BB025C6B7E400F769AC /* RaidDataSource.swift */; };
+		31762BB725C6B83C00F769AC /* PokemonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BB625C6B83C00F769AC /* PokemonClient.swift */; };
+		31762BBF25C6B85100F769AC /* RaidClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BBE25C6B85100F769AC /* RaidClient.swift */; };
+		31762BC425C6B9CC00F769AC /* PokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BC325C6B9CC00F769AC /* PokemonResponse.swift */; };
+		31762BC925C6BCEE00F769AC /* RaidRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BC825C6BCEE00F769AC /* RaidRequest.swift */; };
+		31762BCE25C6BD0800F769AC /* RaidResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BCD25C6BD0800F769AC /* RaidResponse.swift */; };
+		31762BD325C6C05A00F769AC /* PokemonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BD225C6C05A00F769AC /* PokemonDataSource.swift */; };
+		31762BD825C6C07E00F769AC /* PokemonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BD725C6C07E00F769AC /* PokemonDataModel.swift */; };
+		31762BDD25C6C1DA00F769AC /* RaidDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BDC25C6C1DA00F769AC /* RaidDataModel.swift */; };
+		31762BE225C6C34700F769AC /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BE125C6C34700F769AC /* PokemonModel.swift */; };
+		31762BE725C6C37300F769AC /* RaidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762BE625C6C37300F769AC /* RaidModel.swift */; };
+		31762C0325C6C80700F769AC /* RaidCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762C0225C6C80700F769AC /* RaidCollectionViewCell.swift */; };
+		31762C0825C6C81300F769AC /* RaidCollectionViewCell+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762C0725C6C81300F769AC /* RaidCollectionViewCell+Design.swift */; };
+		31762C1F25C6E5B100F769AC /* BaseApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762C1E25C6E5B100F769AC /* BaseApiClient.swift */; };
+		31762C5325C6EEE700F769AC /* TeamDataSurce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762C5225C6EEE700F769AC /* TeamDataSurce.swift */; };
+		31762C5B25C6EF7200F769AC /* TeamUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762C5A25C6EF7200F769AC /* TeamUseCase.swift */; };
+		31762C6125C70D4700F769AC /* RaidDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762C6025C70D4700F769AC /* RaidDetailsViewModel.swift */; };
+		31762C6925C70D5C00F769AC /* RaidDetailsUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31762C6825C70D5C00F769AC /* RaidDetailsUserViewModel.swift */; };
+		61C5E0E8955E453CB7041E38 /* Pods_PoGORaids_PoGORaidsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6738623C9B37631CE855425D /* Pods_PoGORaids_PoGORaidsUITests.framework */; };
+		B7913C35EB7E8590477B7D96 /* Pods_PoGORaids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0433AD30A9763AB137A55602 /* Pods_PoGORaids.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +85,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0433AD30A9763AB137A55602 /* Pods_PoGORaids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoGORaids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C679D86A5EAA9D4A0BF69C /* Pods-PoGORaids-PoGORaidsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoGORaids-PoGORaidsUITests.release.xcconfig"; path = "Target Support Files/Pods-PoGORaids-PoGORaidsUITests/Pods-PoGORaids-PoGORaidsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0ED2899D3F69E8E1C5251956 /* Pods-PoGORaids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoGORaids.release.xcconfig"; path = "Target Support Files/Pods-PoGORaids/Pods-PoGORaids.release.xcconfig"; sourceTree = "<group>"; };
 		31762A0F25C5DA9000F769AC /* PoGORaids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoGORaids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31762A1225C5DA9000F769AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31762A1425C5DA9000F769AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		31762A1625C5DA9000F769AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		31762A1925C5DA9000F769AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31762A1B25C5DA9300F769AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31762A1E25C5DA9300F769AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31762A2025C5DA9300F769AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +100,61 @@
 		31762A3025C5DA9300F769AC /* PoGORaidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoGORaidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31762A3425C5DA9300F769AC /* PoGORaidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoGORaidsUITests.swift; sourceTree = "<group>"; };
 		31762A3625C5DA9300F769AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31762A5B25C5E79600F769AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		31762AAA25C613B300F769AC /* LoginViewController+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Design.swift"; sourceTree = "<group>"; };
+		31762AB225C613C200F769AC /* ConstructViewsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructViewsProtocol.swift; sourceTree = "<group>"; };
+		31762AB725C6149C00F769AC /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		31762ABF25C617AC00F769AC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		31762AC425C617BB00F769AC /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		31762AFD25C61B1300F769AC /* UserClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClient.swift; sourceTree = "<group>"; };
+		31762B0625C61B9800F769AC /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		31762B0E25C61C3C00F769AC /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		31762B1325C61DBC00F769AC /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
+		31762B1925C61DE500F769AC /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		31762B2225C61F9E00F769AC /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		31762B2C25C6206000F769AC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		31762B3425C6209800F769AC /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
+		31762B3A25C6240500F769AC /* TeamClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamClient.swift; sourceTree = "<group>"; };
+		31762B4425C624BB00F769AC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		31762B4C25C624C800F769AC /* RegisterViewController+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+Design.swift"; sourceTree = "<group>"; };
+		31762B5125C624DB00F769AC /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		31762B5C25C6A34300F769AC /* RaidsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidsViewController.swift; sourceTree = "<group>"; };
+		31762B6125C6A35600F769AC /* RaidsViewController+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RaidsViewController+Design.swift"; sourceTree = "<group>"; };
+		31762B6625C6A39300F769AC /* RaidsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidsPresenter.swift; sourceTree = "<group>"; };
+		31762B6B25C6A4FA00F769AC /* RaidsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidsDetailsViewController.swift; sourceTree = "<group>"; };
+		31762B7025C6A50C00F769AC /* RaidsDetailsViewController+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RaidsDetailsViewController+Design.swift"; sourceTree = "<group>"; };
+		31762B7525C6A54300F769AC /* RaidsDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidsDetailsPresenter.swift; sourceTree = "<group>"; };
+		31762B7A25C6A57700F769AC /* CreateRaidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRaidViewController.swift; sourceTree = "<group>"; };
+		31762B7F25C6A58000F769AC /* CreateRaidPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRaidPresenter.swift; sourceTree = "<group>"; };
+		31762B8425C6A59000F769AC /* CreateRaidViewController+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateRaidViewController+Design.swift"; sourceTree = "<group>"; };
+		31762B8925C6A5FD00F769AC /* ProfileDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsViewController.swift; sourceTree = "<group>"; };
+		31762B8E25C6A60B00F769AC /* ProfileDetailsViewController+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileDetailsViewController+Design.swift"; sourceTree = "<group>"; };
+		31762B9325C6A63400F769AC /* ProfileDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsPresenter.swift; sourceTree = "<group>"; };
+		31762B9C25C6B7AD00F769AC /* RaidUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidUseCase.swift; sourceTree = "<group>"; };
+		31762BB025C6B7E400F769AC /* RaidDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidDataSource.swift; sourceTree = "<group>"; };
+		31762BB625C6B83C00F769AC /* PokemonClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonClient.swift; sourceTree = "<group>"; };
+		31762BBE25C6B85100F769AC /* RaidClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidClient.swift; sourceTree = "<group>"; };
+		31762BC325C6B9CC00F769AC /* PokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonResponse.swift; sourceTree = "<group>"; };
+		31762BC825C6BCEE00F769AC /* RaidRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidRequest.swift; sourceTree = "<group>"; };
+		31762BCD25C6BD0800F769AC /* RaidResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidResponse.swift; sourceTree = "<group>"; };
+		31762BD225C6C05A00F769AC /* PokemonDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDataSource.swift; sourceTree = "<group>"; };
+		31762BD725C6C07E00F769AC /* PokemonDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDataModel.swift; sourceTree = "<group>"; };
+		31762BDC25C6C1DA00F769AC /* RaidDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidDataModel.swift; sourceTree = "<group>"; };
+		31762BE125C6C34700F769AC /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		31762BE625C6C37300F769AC /* RaidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidModel.swift; sourceTree = "<group>"; };
+		31762C0225C6C80700F769AC /* RaidCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidCollectionViewCell.swift; sourceTree = "<group>"; };
+		31762C0725C6C81300F769AC /* RaidCollectionViewCell+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RaidCollectionViewCell+Design.swift"; sourceTree = "<group>"; };
+		31762C1E25C6E5B100F769AC /* BaseApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiClient.swift; sourceTree = "<group>"; };
+		31762C5225C6EEE700F769AC /* TeamDataSurce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataSurce.swift; sourceTree = "<group>"; };
+		31762C5A25C6EF7200F769AC /* TeamUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUseCase.swift; sourceTree = "<group>"; };
+		31762C6025C70D4700F769AC /* RaidDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidDetailsViewModel.swift; sourceTree = "<group>"; };
+		31762C6825C70D5C00F769AC /* RaidDetailsUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidDetailsUserViewModel.swift; sourceTree = "<group>"; };
+		3D8B27D299844C828B5BD2D2 /* Pods-PoGORaids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoGORaids.debug.xcconfig"; path = "Target Support Files/Pods-PoGORaids/Pods-PoGORaids.debug.xcconfig"; sourceTree = "<group>"; };
+		5A602E9FC3C2B9582FCEED41 /* Pods_PoGORaidsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoGORaidsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC12F439FDE2FCE7222ADA9 /* Pods-PoGORaidsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoGORaidsTests.release.xcconfig"; path = "Target Support Files/Pods-PoGORaidsTests/Pods-PoGORaidsTests.release.xcconfig"; sourceTree = "<group>"; };
+		6738623C9B37631CE855425D /* Pods_PoGORaids_PoGORaidsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoGORaids_PoGORaidsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		972BD27CF2A5EA6CE5E8AE7F /* Pods-PoGORaidsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoGORaidsTests.debug.xcconfig"; path = "Target Support Files/Pods-PoGORaidsTests/Pods-PoGORaidsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C25C46F979B241DC8DB68FBB /* Pods-PoGORaids-PoGORaidsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoGORaids-PoGORaidsUITests.debug.xcconfig"; path = "Target Support Files/Pods-PoGORaids-PoGORaidsUITests/Pods-PoGORaids-PoGORaidsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7913C35EB7E8590477B7D96 /* Pods_PoGORaids.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C98473E96F9D25DFB1B9085 /* Pods_PoGORaidsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C5E0E8955E453CB7041E38 /* Pods_PoGORaids_PoGORaidsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +192,8 @@
 				31762A2825C5DA9300F769AC /* PoGORaidsTests */,
 				31762A3325C5DA9300F769AC /* PoGORaidsUITests */,
 				31762A1025C5DA9000F769AC /* Products */,
+				FF0D905052E14574AC239163 /* Pods */,
+				FAF91D16637F0DFDB36F6CA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +210,10 @@
 		31762A1125C5DA9000F769AC /* PoGORaids */ = {
 			isa = PBXGroup;
 			children = (
+				31762AA825C6139A00F769AC /* App */,
+				31762AA725C6139400F769AC /* Feature */,
 				31762A1225C5DA9000F769AC /* AppDelegate.swift */,
 				31762A1425C5DA9000F769AC /* SceneDelegate.swift */,
-				31762A1625C5DA9000F769AC /* ViewController.swift */,
-				31762A1825C5DA9000F769AC /* Main.storyboard */,
 				31762A1B25C5DA9300F769AC /* Assets.xcassets */,
 				31762A1D25C5DA9300F769AC /* LaunchScreen.storyboard */,
 				31762A2025C5DA9300F769AC /* Info.plist */,
@@ -128,6 +239,292 @@
 			path = PoGORaidsUITests;
 			sourceTree = "<group>";
 		};
+		31762AA725C6139400F769AC /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				31762B5625C6A30D00F769AC /* Home */,
+				31762AA925C613A000F769AC /* AccountManagement */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		31762AA825C6139A00F769AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				31762B2125C61F8E00F769AC /* Services */,
+				31762AB225C613C200F769AC /* ConstructViewsProtocol.swift */,
+				31762ABF25C617AC00F769AC /* AppRouter.swift */,
+				31762AC425C617BB00F769AC /* AppModule.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		31762AA925C613A000F769AC /* AccountManagement */ = {
+			isa = PBXGroup;
+			children = (
+				31762AFB25C61ADB00F769AC /* Client */,
+				31762AFA25C61AD200F769AC /* DataSource */,
+				31762B2A25C6203000F769AC /* UseCases */,
+				31762AF925C61AC300F769AC /* UI */,
+			);
+			path = AccountManagement;
+			sourceTree = "<group>";
+		};
+		31762AF925C61AC300F769AC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				31762B4325C624AD00F769AC /* Register */,
+				31762B4225C624A200F769AC /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		31762AFA25C61AD200F769AC /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				31762B1825C61DDD00F769AC /* Models */,
+				31762B1325C61DBC00F769AC /* UserDataSource.swift */,
+				31762C5225C6EEE700F769AC /* TeamDataSurce.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		31762AFB25C61ADB00F769AC /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				31762B0525C61B7500F769AC /* Models */,
+				31762AFD25C61B1300F769AC /* UserClient.swift */,
+				31762B3A25C6240500F769AC /* TeamClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		31762B0525C61B7500F769AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31762B0625C61B9800F769AC /* UserRequest.swift */,
+				31762B0E25C61C3C00F769AC /* UserResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31762B1825C61DDD00F769AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31762B1925C61DE500F769AC /* UserDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31762B2125C61F8E00F769AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				31762B2225C61F9E00F769AC /* UserDefaultsService.swift */,
+				31762C1E25C6E5B100F769AC /* BaseApiClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		31762B2A25C6203000F769AC /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				31762B2B25C6205400F769AC /* Models */,
+				31762B3425C6209800F769AC /* UserUseCase.swift */,
+				31762C5A25C6EF7200F769AC /* TeamUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		31762B2B25C6205400F769AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31762B2C25C6206000F769AC /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31762B4225C624A200F769AC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				31762A5B25C5E79600F769AC /* LoginViewController.swift */,
+				31762AAA25C613B300F769AC /* LoginViewController+Design.swift */,
+				31762AB725C6149C00F769AC /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		31762B4325C624AD00F769AC /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				31762B4425C624BB00F769AC /* RegisterViewController.swift */,
+				31762B4C25C624C800F769AC /* RegisterViewController+Design.swift */,
+				31762B5125C624DB00F769AC /* RegisterPresenter.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		31762B5625C6A30D00F769AC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				31762B9825C6B78400F769AC /* Cleint */,
+				31762B9925C6B78900F769AC /* DataSource */,
+				31762B9A25C6B79000F769AC /* UseCase */,
+				31762B5725C6A31400F769AC /* UI */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		31762B5725C6A31400F769AC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				31762C5F25C70D3B00F769AC /* ViewModels */,
+				31762B5B25C6A32C00F769AC /* ProfileDetails */,
+				31762B5A25C6A32600F769AC /* CreateRaid */,
+				31762B5925C6A31F00F769AC /* RaidDetails */,
+				31762B5825C6A31A00F769AC /* Raids */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		31762B5825C6A31A00F769AC /* Raids */ = {
+			isa = PBXGroup;
+			children = (
+				31762BEB25C6C68100F769AC /* Components */,
+				31762B5C25C6A34300F769AC /* RaidsViewController.swift */,
+				31762B6125C6A35600F769AC /* RaidsViewController+Design.swift */,
+				31762B6625C6A39300F769AC /* RaidsPresenter.swift */,
+			);
+			path = Raids;
+			sourceTree = "<group>";
+		};
+		31762B5925C6A31F00F769AC /* RaidDetails */ = {
+			isa = PBXGroup;
+			children = (
+				31762B6B25C6A4FA00F769AC /* RaidsDetailsViewController.swift */,
+				31762B7025C6A50C00F769AC /* RaidsDetailsViewController+Design.swift */,
+				31762B7525C6A54300F769AC /* RaidsDetailsPresenter.swift */,
+			);
+			path = RaidDetails;
+			sourceTree = "<group>";
+		};
+		31762B5A25C6A32600F769AC /* CreateRaid */ = {
+			isa = PBXGroup;
+			children = (
+				31762B7A25C6A57700F769AC /* CreateRaidViewController.swift */,
+				31762B8425C6A59000F769AC /* CreateRaidViewController+Design.swift */,
+				31762B7F25C6A58000F769AC /* CreateRaidPresenter.swift */,
+			);
+			path = CreateRaid;
+			sourceTree = "<group>";
+		};
+		31762B5B25C6A32C00F769AC /* ProfileDetails */ = {
+			isa = PBXGroup;
+			children = (
+				31762B8925C6A5FD00F769AC /* ProfileDetailsViewController.swift */,
+				31762B8E25C6A60B00F769AC /* ProfileDetailsViewController+Design.swift */,
+				31762B9325C6A63400F769AC /* ProfileDetailsPresenter.swift */,
+			);
+			path = ProfileDetails;
+			sourceTree = "<group>";
+		};
+		31762B9825C6B78400F769AC /* Cleint */ = {
+			isa = PBXGroup;
+			children = (
+				31762BB525C6B82B00F769AC /* Models */,
+				31762BB625C6B83C00F769AC /* PokemonClient.swift */,
+				31762BBE25C6B85100F769AC /* RaidClient.swift */,
+			);
+			path = Cleint;
+			sourceTree = "<group>";
+		};
+		31762B9925C6B78900F769AC /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				31762BA425C6B7C300F769AC /* Models */,
+				31762BB025C6B7E400F769AC /* RaidDataSource.swift */,
+				31762BD225C6C05A00F769AC /* PokemonDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		31762B9A25C6B79000F769AC /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				31762B9B25C6B7A000F769AC /* Models */,
+				31762B9C25C6B7AD00F769AC /* RaidUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		31762B9B25C6B7A000F769AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31762BE125C6C34700F769AC /* PokemonModel.swift */,
+				31762BE625C6C37300F769AC /* RaidModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31762BA425C6B7C300F769AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31762BD725C6C07E00F769AC /* PokemonDataModel.swift */,
+				31762BDC25C6C1DA00F769AC /* RaidDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31762BB525C6B82B00F769AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31762BC325C6B9CC00F769AC /* PokemonResponse.swift */,
+				31762BC825C6BCEE00F769AC /* RaidRequest.swift */,
+				31762BCD25C6BD0800F769AC /* RaidResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31762BEB25C6C68100F769AC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				31762C0225C6C80700F769AC /* RaidCollectionViewCell.swift */,
+				31762C0725C6C81300F769AC /* RaidCollectionViewCell+Design.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		31762C5F25C70D3B00F769AC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				31762C6025C70D4700F769AC /* RaidDetailsViewModel.swift */,
+				31762C6825C70D5C00F769AC /* RaidDetailsUserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FAF91D16637F0DFDB36F6CA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0433AD30A9763AB137A55602 /* Pods_PoGORaids.framework */,
+				6738623C9B37631CE855425D /* Pods_PoGORaids_PoGORaidsUITests.framework */,
+				5A602E9FC3C2B9582FCEED41 /* Pods_PoGORaidsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0D905052E14574AC239163 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D8B27D299844C828B5BD2D2 /* Pods-PoGORaids.debug.xcconfig */,
+				0ED2899D3F69E8E1C5251956 /* Pods-PoGORaids.release.xcconfig */,
+				C25C46F979B241DC8DB68FBB /* Pods-PoGORaids-PoGORaidsUITests.debug.xcconfig */,
+				04C679D86A5EAA9D4A0BF69C /* Pods-PoGORaids-PoGORaidsUITests.release.xcconfig */,
+				972BD27CF2A5EA6CE5E8AE7F /* Pods-PoGORaidsTests.debug.xcconfig */,
+				5EC12F439FDE2FCE7222ADA9 /* Pods-PoGORaidsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +532,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31762A3925C5DA9300F769AC /* Build configuration list for PBXNativeTarget "PoGORaids" */;
 			buildPhases = (
+				479DC599179B630D57FB2EBA /* [CP] Check Pods Manifest.lock */,
 				31762A0B25C5DA9000F769AC /* Sources */,
 				31762A0C25C5DA9000F769AC /* Frameworks */,
 				31762A0D25C5DA9000F769AC /* Resources */,
+				0F75C0A41728D5AB9BA50965 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +551,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31762A3C25C5DA9300F769AC /* Build configuration list for PBXNativeTarget "PoGORaidsTests" */;
 			buildPhases = (
+				1A870286A62D4533DCD01D88 /* [CP] Check Pods Manifest.lock */,
 				31762A2125C5DA9300F769AC /* Sources */,
 				31762A2225C5DA9300F769AC /* Frameworks */,
 				31762A2325C5DA9300F769AC /* Resources */,
@@ -170,9 +570,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31762A3F25C5DA9300F769AC /* Build configuration list for PBXNativeTarget "PoGORaidsUITests" */;
 			buildPhases = (
+				0CB98355C00FA1BE74631E51 /* [CP] Check Pods Manifest.lock */,
 				31762A2C25C5DA9300F769AC /* Sources */,
 				31762A2D25C5DA9300F769AC /* Frameworks */,
 				31762A2E25C5DA9300F769AC /* Resources */,
+				773BD14249411FADC56C9102 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +635,6 @@
 			files = (
 				31762A1F25C5DA9300F769AC /* LaunchScreen.storyboard in Resources */,
 				31762A1C25C5DA9300F769AC /* Assets.xcassets in Resources */,
-				31762A1A25C5DA9000F769AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +654,165 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CB98355C00FA1BE74631E51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoGORaids-PoGORaidsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F75C0A41728D5AB9BA50965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PoGORaids/Pods-PoGORaids-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PoGORaids/Pods-PoGORaids-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PoGORaids/Pods-PoGORaids-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A870286A62D4533DCD01D88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoGORaidsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		479DC599179B630D57FB2EBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoGORaids-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		773BD14249411FADC56C9102 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PoGORaids-PoGORaidsUITests/Pods-PoGORaids-PoGORaidsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PoGORaids-PoGORaidsUITests/Pods-PoGORaids-PoGORaidsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PoGORaids-PoGORaidsUITests/Pods-PoGORaids-PoGORaidsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		31762A0B25C5DA9000F769AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31762A1725C5DA9000F769AC /* ViewController.swift in Sources */,
+				31762AB825C6149C00F769AC /* LoginPresenter.swift in Sources */,
+				31762AC525C617BB00F769AC /* AppModule.swift in Sources */,
+				31762BCE25C6BD0800F769AC /* RaidResponse.swift in Sources */,
+				31762BDD25C6C1DA00F769AC /* RaidDataModel.swift in Sources */,
+				31762AB325C613C200F769AC /* ConstructViewsProtocol.swift in Sources */,
+				31762B8525C6A59000F769AC /* CreateRaidViewController+Design.swift in Sources */,
+				31762AAB25C613B300F769AC /* LoginViewController+Design.swift in Sources */,
+				31762C6925C70D5C00F769AC /* RaidDetailsUserViewModel.swift in Sources */,
+				31762C0325C6C80700F769AC /* RaidCollectionViewCell.swift in Sources */,
+				31762BD325C6C05A00F769AC /* PokemonDataSource.swift in Sources */,
+				31762B3B25C6240500F769AC /* TeamClient.swift in Sources */,
+				31762BBF25C6B85100F769AC /* RaidClient.swift in Sources */,
+				31762C5325C6EEE700F769AC /* TeamDataSurce.swift in Sources */,
+				31762BB125C6B7E400F769AC /* RaidDataSource.swift in Sources */,
+				31762B7B25C6A57700F769AC /* CreateRaidViewController.swift in Sources */,
+				31762B9425C6A63400F769AC /* ProfileDetailsPresenter.swift in Sources */,
+				31762B3525C6209800F769AC /* UserUseCase.swift in Sources */,
+				31762C1F25C6E5B100F769AC /* BaseApiClient.swift in Sources */,
+				31762B8F25C6A60B00F769AC /* ProfileDetailsViewController+Design.swift in Sources */,
+				31762BE725C6C37300F769AC /* RaidModel.swift in Sources */,
+				31762BE225C6C34700F769AC /* PokemonModel.swift in Sources */,
+				31762B6225C6A35600F769AC /* RaidsViewController+Design.swift in Sources */,
+				31762B8025C6A58000F769AC /* CreateRaidPresenter.swift in Sources */,
+				31762B7125C6A50C00F769AC /* RaidsDetailsViewController+Design.swift in Sources */,
+				31762B8A25C6A5FD00F769AC /* ProfileDetailsViewController.swift in Sources */,
+				31762A5C25C5E79600F769AC /* LoginViewController.swift in Sources */,
+				31762BB725C6B83C00F769AC /* PokemonClient.swift in Sources */,
+				31762BC425C6B9CC00F769AC /* PokemonResponse.swift in Sources */,
+				31762B6725C6A39300F769AC /* RaidsPresenter.swift in Sources */,
+				31762B4D25C624C800F769AC /* RegisterViewController+Design.swift in Sources */,
+				31762B1425C61DBC00F769AC /* UserDataSource.swift in Sources */,
+				31762AC025C617AC00F769AC /* AppRouter.swift in Sources */,
+				31762B9D25C6B7AD00F769AC /* RaidUseCase.swift in Sources */,
+				31762B4525C624BB00F769AC /* RegisterViewController.swift in Sources */,
 				31762A1325C5DA9000F769AC /* AppDelegate.swift in Sources */,
+				31762B6C25C6A4FA00F769AC /* RaidsDetailsViewController.swift in Sources */,
+				31762B2325C61F9E00F769AC /* UserDefaultsService.swift in Sources */,
+				31762B7625C6A54300F769AC /* RaidsDetailsPresenter.swift in Sources */,
+				31762AFE25C61B1300F769AC /* UserClient.swift in Sources */,
+				31762B0725C61B9800F769AC /* UserRequest.swift in Sources */,
+				31762BC925C6BCEE00F769AC /* RaidRequest.swift in Sources */,
+				31762BD825C6C07E00F769AC /* PokemonDataModel.swift in Sources */,
+				31762C5B25C6EF7200F769AC /* TeamUseCase.swift in Sources */,
+				31762B5225C624DB00F769AC /* RegisterPresenter.swift in Sources */,
+				31762B5D25C6A34300F769AC /* RaidsViewController.swift in Sources */,
 				31762A1525C5DA9000F769AC /* SceneDelegate.swift in Sources */,
+				31762C6125C70D4700F769AC /* RaidDetailsViewModel.swift in Sources */,
+				31762B1A25C61DE500F769AC /* UserDataModel.swift in Sources */,
+				31762B2D25C6206000F769AC /* UserModel.swift in Sources */,
+				31762C0825C6C81300F769AC /* RaidCollectionViewCell+Design.swift in Sources */,
+				31762B0F25C61C3C00F769AC /* UserResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +848,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		31762A1825C5DA9000F769AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31762A1925C5DA9000F769AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		31762A1D25C5DA9300F769AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +977,7 @@
 		};
 		31762A3A25C5DA9300F769AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D8B27D299844C828B5BD2D2 /* Pods-PoGORaids.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +997,7 @@
 		};
 		31762A3B25C5DA9300F769AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED2899D3F69E8E1C5251956 /* Pods-PoGORaids.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +1017,7 @@
 		};
 		31762A3D25C5DA9300F769AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 972BD27CF2A5EA6CE5E8AE7F /* Pods-PoGORaidsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +1040,7 @@
 		};
 		31762A3E25C5DA9300F769AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC12F439FDE2FCE7222ADA9 /* Pods-PoGORaidsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +1063,7 @@
 		};
 		31762A4025C5DA9300F769AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C25C46F979B241DC8DB68FBB /* Pods-PoGORaids-PoGORaidsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +1084,7 @@
 		};
 		31762A4125C5DA9300F769AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C679D86A5EAA9D4A0BF69C /* Pods-PoGORaids-PoGORaidsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
